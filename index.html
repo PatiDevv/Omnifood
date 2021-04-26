@@ -20,6 +20,10 @@
   </head>
 
   <body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="main.js"></script>
+
     <header>
       <nav>
         <div class="row">
@@ -43,6 +47,7 @@
         <a class="btn btn-ghost" href="#">Show me more</a>
       </div>
     </header>
+    <div class="dupa"></div>
 
     <section class="section-features">
       <div class="row">
@@ -313,7 +318,9 @@
     </section>
 
     <section class="section-plans">
+
       <div class="row"> <h2>Start eating healthy today</h2> </div>
+
       <div class="row"> 
 
         <div class="col span-1-of-3">
@@ -326,70 +333,180 @@
             </div>
                   
             <div>
-                  <ul>
-                        <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> 1 meal every day </li>
-                        <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> Order 24/7</li>
-                        <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> Access to newest creations</li>
-                        <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> Free delivery</li>
-                  </ul>
+                <ul>
+                      <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> 1 meal every day </li>
+                      <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> Order 24/7</li>
+                      <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> Access to newest creations</li>
+                      <li><ion-icon class="icon-cities" name="checkmark-circle"></ion-icon> Free delivery</li>
+                </ul>
             </div>
 
             <div>
                   <a href="#" class="btn btn-full"> Sign up now</a>
             </div>
-          </div>
-      </div>
 
-      <div class="col span-1-of-3">
-        <div class="plan-box">
-
-          <div>
-              <h3>Pro</h3>
-              <p class="plan-price"> $149 <span>/month</span></p>
-              <p class="plan-price-meal"> That’s only 14.90$ per meall</p>
           </div>
+        </div>
+
+        <div class="col span-1-of-3">
+          <div class="plan-box">
+
+            <div>
+                <h3>Pro</h3>
+                <p class="plan-price"> $149 <span>/month</span></p>
+                <p class="plan-price-meal"> That’s only 14.90$ per meall</p>
+            </div>
                 
-          <div>
+            <div>
                 <ul>
                       <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> 1 meal 10 days/month </li>
                       <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> Order 24/7</li>
                       <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> Access to newest creations</li>
                       <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> Free delivery</li>
                 </ul>
+           </div>
+
+            <div>
+                  <a href="#" class="btn btn-ghost"> Sign up now</a>
+            </div>
           </div>
+        </div>
 
-          <div>
-                <a href="#" class="btn btn-ghost"> Sign up now</a>
+        <div class="col span-1-of-3">
+          <div class="plan-box">
+
+            <div>
+                <h3>Starter</h3>
+                <p class="plan-price"> $19 <span>/meal</span></p>
+                <p class="plan-price-meal"> Try us out!</p>
+            </div>
+                
+            <div>
+                <ul>
+                      <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> 1 meal </li>
+                      <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> Order from 8 am to 12 pm</li>
+                      <li><ion-icon class="icon-cities"  name="close-circle"></ion-icon> </li>
+                      <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> Free delivery</li>
+                </ul>
+            </div>
+
+            <div>
+                  <a href="#" class="btn btn-ghost">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Try &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+            </div>
           </div>
         </div>
-    </div>
-
-    <div class="col span-1-of-3">
-      <div class="plan-box">
-
-        <div>
-            <h3>Starter</h3>
-            <p class="plan-price"> $19 <span>/meal</span></p>
-            <p class="plan-price-meal"> Try us out!</p>
-        </div>
-              
-        <div>
-              <ul>
-                    <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> 1 meal </li>
-                    <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> Order from 8 am to 12 pm</li>
-                    <li><ion-icon class="icon-cities"  name="close-circle"></ion-icon> </li>
-                    <li><ion-icon class="icon-cities"  name="checkmark-circle"></ion-icon> Free delivery</li>
-              </ul>
-        </div>
-
-        <div>
-              <a href="#" class="btn btn-ghost"> Sign up now</a>
-        </div>
-      </div>
-  </div>
-
-
       </div>
     </section>
+
+    <section class="section-form">
+
+      <div class="row">
+        <h2>We're happy to hear from you</h2>
+      </div>
+
+      <div class="row">
+          <form class="contact-form" method="post" action="#">
+
+            <div class="row">
+                <div class="col span-1-of-3">
+                      <label for="name">Name</label>
+                </div>
+
+                <div class="col span-2-of-3">
+                  <input type="text" name="name" id="name" placeholder="Name Surname" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3"> 
+                     <label for="email">Email</label>
+                </div>
+
+                <div class="col span-2-of-3">
+                  <input type="email" name="email" id="email" placeholder="name@mail.com" required>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="find-us">How did you find us?</label>
+              </div>
+
+              <div class="col span-2-of-3">
+                <select name="find-us" id="find-us">
+                    <option value="friends" selected> Friends</option>
+                    <option value="search"> Search engine</option>
+                    <option value="ad"> Advertisement</option>
+                    <option value="other"> Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col span-1-of-3"> 
+                <label for="newsletter">Newsletter?</label> 
+              </div>
+
+              <div class="col span-2-of-3 checkbox-yes">
+                <input type="checkbox" name="newsletter" id="newsletter" checked> Yes, please 
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col span-1-of-3"> 
+                <label for="mail">Drop us a line</label>
+              </div>
+
+              <div class="col span-2-of-3">
+                <textarea name="mail" id="mail" placeholder="Talk to us about everything!"> </textarea> 
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col span-1-of-3"> 
+                <label> &nbsp; </label>
+              </div>
+
+              <div class="col span-2-of-3 btn-send-it">
+                <input type="submit" value="Send it!">
+              </div>
+            </div>
+
+          </form>
+      </div>
+    </section>
+
+      <footer>
+        <div class="row">
+
+          <div class="col span-1-of-2">
+              <ul class="footer-nav">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">BLog</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">IOS App</a></li>
+                  <li><a href="#">Android app</a></li>
+              </ul>
+          </div>
+
+          <div class="col span-1-of-2">
+              <ul class="social-links">
+                  <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="row">
+            <p class="p-footer">
+                Copyright &copy; 2015 by Omnifood. All rights reserved.
+            </p>
+        </div>
+     </footer>
+
+
+
   </body>
 </html>

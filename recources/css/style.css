@@ -155,7 +155,8 @@ a:active {
 
 /* ------ BUTTONS ------ */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -165,7 +166,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #e67e22;
   border: 2px solid #e67e22;
   color: #fff;
@@ -179,12 +181,16 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"]:hover,
+input[type="submit"]:hover {
   border: 2px solid #bf6516;
   background-color: #bf6516;
   color: #fff;
@@ -488,9 +494,141 @@ cite img {
 .plan-box ul li {
   padding: 5px 0px;
   font-size: 90%;
+}
 
-  /* 
-  
-  ;
-   */
+/* ---------------------------------------- */
+/* PLANS - sign up */
+/* ---------------------------------------- */
+
+.contact-form {
+  width: 72%;
+  margin: 30px auto 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 70%;
+}
+
+input[type="text"],
+input[type="email"] {
+  opacity: 0.7;
+}
+
+.btn-send-it {
+  text-align: center;
+}
+
+textarea {
+  height: 100px;
+}
+
+*:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0px;
+  font-size: 70%;
+}
+
+label {
+  font-size: 100%;
+  letter-spacing: 1px;
+}
+
+.checkbox-yes {
+  font-size: 80%;
+}
+
+/* ---------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------- */
+
+footer {
+  background-color: rgba(233, 233, 233, 0.733);
+  color: #fff;
+  font-size: 90%;
+  padding: 0.5%;
+}
+
+.p-footer {
+  font-size: 50%;
+  font-weight: 400;
+  float: left;
+  opacity: 1;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgb(165, 165, 165);
+}
+
+.footer-nav,
+.social-links {
+  list-style: none;
+  display: inline-flex;
+  margin-left: 6px;
+  margin-right: 6px;
+
+  vertical-align: middle;
+}
+
+.footer-nav {
+  float: left;
+}
+
+.social-links {
+  float: right;
+  font-size: 150%;
+  margin-top: -3px;
+}
+
+.footer-nav li {
+  margin-right: 20px;
+}
+
+.social-links li {
+  margin-right: 40px;
+}
+.social-links li:last-child {
+  margin: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited,
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  padding-bottom: 1px;
+  border-bottom: none;
+  transition: color 0s;
+}
+
+.social-links li a:hover,
+.social-links li a:active,
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  text-decoration: none;
+  color: #e67e22;
+  transition: font-size 0.5s;
+
+  opacity: 0.9;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+  font-size: 120%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  font-size: 105%;
 }
