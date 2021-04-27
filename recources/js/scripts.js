@@ -63,9 +63,8 @@ $(document).ready(function () {
         }
       }
     });
-  //
-  // Animation on scroll
 
+  // Animation on scroll
   $(".js--wp-1").waypoint(
     function (direction) {
       $(".js--wp-1").addClass("animate__animated animate__fadeInUp");
@@ -101,4 +100,18 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+
+  // Mobile navigation
+  $(".js--nav-icon").click(function () {
+    var nav = $(".js--main-nav");
+    var icon = $(".js--nav-icon ion-icon");
+
+    nav.slideToggle(500);
+
+    if (icon.attr("name") === "reorder-three") {
+      icon.attr("name", "close");
+    } else {
+      icon.attr("name", "reorder-three");
+    }
+  });
 });

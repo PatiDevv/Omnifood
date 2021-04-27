@@ -151,9 +151,60 @@
     width: 100%;
   }
 
+  /* /////////// */
   .main-nav {
+    float: left;
+    margin-top: 23px;
     display: none;
   }
+
+  .sticky .main-nav {
+    margin-top: 23px;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 2.5px 0px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 2.5px 0px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  a:hover,
+  a:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .sticky .mobile-nav-icon {
+    display: inline-block;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .logo,
+  .logo-black {
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  /* /////////// */
 
   .long-copy {
     width: 90%;
@@ -192,9 +243,6 @@
 
   .app-screen {
     width: 40%;
-  }
-
-  element.style {
   }
 
   .works-step div {

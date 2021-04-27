@@ -267,6 +267,21 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile-nav */
+
+.mobile-nav-icon {
+  float: right;
+  list-style: none;
+  margin-top: 0px;
+  font-size: 300%;
+  cursor: pointer;
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
 /* Sticky navi */
 .sticky {
   position: fixed;
@@ -276,6 +291,10 @@ header {
   width: 100%;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.253);
   z-index: 9999;
+}
+
+.hide {
+  display: none;
 }
 
 .sticky .main-nav {
